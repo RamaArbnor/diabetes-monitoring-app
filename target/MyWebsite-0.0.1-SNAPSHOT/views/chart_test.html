@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Hospital</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+	<div style="width: 50%;">
+		<canvas id="myChart"></canvas>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		const ctx = document.getElementById('myChart');
+
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ['Today', 'Tmr', 'After tmr', 'Masqitinesri', 'Masqitiqitinesri', 'Shum'],
+				datasets: [{
+					label: 'blood glucose',
+					data: [12, 19, 3, 5, 2, 3],
+					borderWidth: 1
+				},{
+					label: 'carbon intake',
+					data: [5, 1, 5, 7, 9, 13],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					y: {
+						beginAtZero: true
+					}
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript" src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+</body>
+
+</html>

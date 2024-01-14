@@ -1,0 +1,8 @@
+city\org\rs\DAO.class
+city\org\rs\Application.class
+city\org\rs\CORSFilter.class
+city\org\rs\AuthenticationFilter.class
+city\org\rs\User.class
+city\org\rs\BloodTestResource.class
+city\org\rs\BloodTest.class
+city\org\rs\UserResource.class
