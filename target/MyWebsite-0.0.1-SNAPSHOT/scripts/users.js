@@ -20,6 +20,11 @@ const getDataFromREST = async (appendage) => {
 	return data;
 }
 
+document.getElementById("logout").onclick = () => {
+	localStorage.removeItem("token");
+	window.location.href = "http://localhost:8080/MyWebsite-0.0.1-SNAPSHOT/index.html";
+}
+
 function toggleDiv(divID, hiddenID) {
 	document.getElementById(divID).classList.toggle("hidden");
 
